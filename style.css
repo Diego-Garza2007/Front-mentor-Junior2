@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+:root {
+--Purple: hsl(259, 100%, 65%);
+--Light-red: rgb(255, 87, 87);
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--Off-white);
+}
+ 
+.purple {
+    color: var(--Purple);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+.section {
+    width: 90%;
+    background-color: white;
+    border-radius: 0px 0px 150px 0px;
+    margin: 5% 0px 0px 0px;
+    padding: 10px;
+}
+
+.section__Tinputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section label {
+    display: block;
+    color: var(--Smokey-grey);
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+.section__input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid var(--Smokey-grey);
+    height: 60px;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.section__submitLayout {
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+}
+.section__submit {
+    background-color: var(--Purple);
+    width: 15%;
+    padding: 10px;
+    border-radius: 100%;
+    z-index: 1;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--Light-grey);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.section__Number {
+    font-size: 4rem;
+}
+.requiredText {
+    color: var(--Light-red);
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 3px 0px 0px 0px;
+}
+.border-red {
+    border: 1px solid var(--Light-red);
+}
+.text-red {
+    color: var(--Light-red);
+}
+
+@media screen and (min-width: 850px) {
+    .section {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1250px) {
+    .section {
+        width: 50%;
+        padding: 50px;
+    }
+
+    .section__Tinputs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0px auto 0px 0px;
+    }
+
+    .section__input {
+        padding: 5px;
+        width: 70%;
+        border-radius: 10px;
+        border: 1px solid var(--Smokey-grey);
+        height: 60px;
+        padding: 20px;
+
+    }
+
+
+    .section__submitLayout {
+        justify-content: end;
+        width: 95%;
+        margin: 5% auto 0px 0px;
+    }
+
+    .section__submit {
+        width: 10%;
+        padding: 20px;
+    }
+    .line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+    .section__Number {
+        font-size: 5.5rem;
+        font-weight: 800;
+        font-style: italic;
+    }
+}

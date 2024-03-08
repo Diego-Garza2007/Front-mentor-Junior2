@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./reset.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+<main class="main">
+  <section class="section">
+    <form class="section__form" id="form">
+
+
+      <div class="section__Tinputs">
+        <div class="section__Tinputs__Day">
+            <label class="section__LDay">Day</label>
+            <input type="text" placeholder="DD" class="section__input" id="day" required>
+        </div>
+        <div class="section__Tinputs__Month">
+            <label class="section__LMonth">Month</label>
+            <input type="text" placeholder="MM" class="section__input" id="month" required>
+        </div>
+        <div class="section__Tinputs__Year">
+            <label class="section__LYear">Year</label>
+            <input type="text" placeholder="YYYY" class="section__input" id="year" required>  
+      </div>
+    </div>
+
+
+   <div class="section__submitLayout">
+    <input type="image" src="./assets/images/icon-arrow.svg" alt="Enviar" class="section__submit" id="submit">
+    <div class="line"></div>
+  </div>
+  </form>
+
+    <h1 class="section__Number"><span class="purple yearNumber">--</span> years</h1>
+    <h1 class="section__Number"><span class="purple monthNumber">--</span></span> months</h1>
+    <h1 class="section__Number"><span class="purple dayNumber">--</span></span> days</h1>
+  </section>
+</main>
+  <script src="./script.js"></script>
+</body>
+</html>
